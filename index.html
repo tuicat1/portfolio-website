@@ -1,161 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
-        <title>Austen Edge Portfolio Website</title>
-        <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0" />
+    <title>Austen Edge Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
-            </div>
-            <button class="nav-toggle" aria-label="toggle-navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Austen Edge</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">computer science</p>
-            <img src="img/austen.jpg" alt="Austen Edge" class="intro__img">
-        </section>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="16"
+          width="20"
+          viewBox="0 0 640 512"
+        >
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+          <path
+            d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+          />
+        </svg>
+      </div>
+      <button class="nav-toggle" aria-label="toggle-navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Austen Edge</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">computer science</p>
+      <img src="img/austen.jpg" alt="Austen Edge" class="intro__img" />
+    </section>
 
-        <!-- My Services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Software Development and Programming</h3>
-                    <p>🖥️ I craft robust and efficient software solutions using my proficiency in Python, SQL, C, Java, JavaScript and HTML/CSS. From concept to implementation, 
-                        I thrive on turning ideas into functional and elegant code.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>Cybersecurity and Systems Security</h3>
-                    <p>🔐 With a keen eye for security, I analyze, implement, and optimize measures to safeguard systems. 
-                        My understanding of network communications and cybersecurity principles ensures that digital assets remain protected in an ever-evolving threat landscape.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3> IT Consultancy and Enterprise Systems</h3>
-                    <p>💼 Leveraging my knowledge of SAP S/4 HANA, SAP SOLMAN and Economics, I provide strategic IT consultancy.
-                         I bridge the gap between technology and business needs, offering insights for effective decision-making and streamlined operations.</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
+    <!-- My Services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Software Development and Programming</h3>
+          <p>
+            🖥️ I craft robust and efficient software solutions using my
+            proficiency in Python, SQL, C, Java, JavaScript and HTML/CSS. From
+            concept to implementation, I thrive on turning ideas into functional
+            and elegant code.
+          </p>
+        </div>
+        <!-- / service -->
 
-            <a href="#work" class="btn">My Work</a>
-        </section>
+        <div class="service">
+          <h3>Cybersecurity and Systems Security</h3>
+          <p>
+            🔐 With a keen eye for security, I analyze, implement, and optimize
+            measures to safeguard systems. My understanding of network
+            communications and cybersecurity principles ensures that digital
+            assets remain protected in an ever-evolving threat landscape.
+          </p>
+        </div>
+        <!-- / service -->
 
-        <!-- About Me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about">Computer Science Student</p>
+        <div class="service">
+          <h3>IT Consultancy and Enterprise Systems</h3>
+          <p>
+            💼 Leveraging my knowledge of SAP S/4 HANA, SAP SOLMAN and
+            Economics, I provide strategic IT consultancy. I bridge the gap
+            between technology and business needs, offering insights for
+            effective decision-making and streamlined operations.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
 
-            <div class="about-me__body">
-                <p>👋 Hi, I'm Austen Edge, a Computer Science student at The University of Auckland deeply passionate about programming, cybersecurity, and IT consultancy.</p>
-                <p>🚀 In my penultimate year, I've learned Python, SQL, and assembly, with hands-on experience in C, Python, Java, JavaScript, HTML/CSS, and SAP systems. Certified in Microsoft Office, I bridge theoretical knowledge with practical skills.</p>
-                <p>🌐 My interests span network communications, AI, and security. I excel in drawing ER diagrams and applying logical principles to real-world scenarios.</p>
-                <p>🔍 Eager to contribute my technical prowess to innovative projects, I'm always exploring new technologies. Let's connect and build something amazing!</p>
+      <a href="#work" class="btn">My Work</a>
+    </section>
 
-                
-            </div>
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Computer Science Student
+      </p>
 
-            <img src="img/austen.jpg" alt="Austen Edge" class="about-me__img">
-        </section> <!-- / About Me -->
+      <div class="about-me__body">
+        <p>
+          👋 Hi, I'm Austen Edge, a Computer Science student at The University
+          of Auckland deeply passionate about programming, cybersecurity, and IT
+          consultancy.
+        </p>
+        <p>
+          🚀 In my penultimate year, I've learned Python, SQL, and assembly,
+          with hands-on experience in C, Python, Java, JavaScript, HTML/CSS, and
+          SAP systems. Certified in Microsoft Office, I bridge theoretical
+          knowledge with practical skills.
+        </p>
+        <p>
+          🌐 My interests span network communications, AI, and security. I excel
+          in drawing ER diagrams and applying logical principles to real-world
+          scenarios.
+        </p>
+        <p>
+          🔍 Eager to contribute my technical prowess to innovative projects,
+          I'm always exploring new technologies. Let's connect and build
+          something amazing!
+        </p>
+      </div>
 
-        <!-- My Work --> 
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="bouncing-shapes.html" class="portfolio__item">
-                    <img src="img/bouncing-shapes.gif" alt="bouncing-shapes" class="portfolio__img">
-                </a>
-                <!-- Portfolio item 02 -->
-                <a href="games-library.html" class="portfolio__item">
-                    <img src="img/games-library.JPG" alt="games-library-image" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 03 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 04 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 05 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 06 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 07 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 08 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 09 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 0 0-->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
-                </a>                
-            </div>
-        </section>
+      <img src="img/austen.jpg" alt="Austen Edge" class="about-me__img" />
+    </section>
+    <!-- / About Me -->
 
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto:austen.edge@xtra.co.nz" class="footer__link">austen.edge@xtra.co.nz</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/austen-edge-0b1b3a1a0/"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.facebook.com/austen.edge.1" target="_blank"><i class="fab fa-facebook"></i></a>
-                </li>
-            </ul>
-        </footer>
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="bouncing-shapes.html" class="portfolio__item">
+          <img
+            src="img/bouncing-shapes.gif"
+            alt="bouncing-shapes"
+            class="portfolio__img"
+          />
+        </a>
+        <!-- Portfolio item 02 -->
+        <a href="games-library.html" class="portfolio__item">
+          <img
+            src="img/games-library.JPG"
+            alt="games-library-image"
+            class="portfolio__img"
+          />
+        </a>
 
-        <script src="js/index.js"></script>
-    </body>
+        <!-- Portfolio item 03 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
+        </a>
 
+        <!-- Portfolio item 04 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 05 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-05.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 06 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-06.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 07 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-07.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 08 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-08.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 09 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-09.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 0 0-->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-10.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:austen.edge@xtra.co.nz" class="footer__link"
+        >austen.edge@xtra.co.nz</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/austen-edge-0b1b3a1a0/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.facebook.com/austen.edge.1"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>
